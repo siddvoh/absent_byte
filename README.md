@@ -2,9 +2,9 @@
 
 Code and data for two papers on what medical vision-language models do when the image never arrives.
 
-**Hearsay: Vision-Language Medical Diagnoses Without an Image.** Siddharth Vohra. TrustVLM Workshop at ICMR 2026.
+**Hearsay: Vision-Language Medical Diagnoses Without an Image.** Siddharth Vohra. Peer-reviewed and presented at the 1st Workshop on Toward Trustworthy Vision-Language Models in the Wild (TrustVLM) at ACM ICMR 2026, Amsterdam. The workshop is non-archival, so the arXiv preprint is the version to cite: https://arxiv.org/abs/2607.26886. Project page: https://siddvoh.com/hearsay/
 
-**Absent-Byte Diagnoses: Auditing Structured Medical VLM Interfaces.** Siddharth Vohra, Manikandan Ravikiran. 2nd Agentic AI for Medicine Workshop at MICCAI 2026.
+**Absent-Byte Diagnoses: Auditing Structured Medical VLM Interfaces.** Siddharth Vohra, Manikandan Ravikiran. Published in the MICCAI 2026 workshop proceedings (MedAgent, the 2nd Agentic AI for Medicine Workshop). Open-access version: https://papers.miccai.org/miccai-2026-sat/MedAgent_050.html. Project page: https://siddvoh.com/absent-byte/
 
 Both draw on one experiment. The first paper reports three models; the second extends the same grid to six and adds the interface audit.
 
@@ -96,6 +96,34 @@ No patient data is present. Demographic descriptors are synthetic. The records a
 `jsd_decomposition.csv` shipped with Jensen-Shannon distance in its `overall` column, from before `metrics.jsd` was changed to return divergence. `build_jsd_decomposition.py` regenerates it as divergence, consistent with every other table. Each changed cell is the square of the old value.
 
 The Hearsay figure PDFs regenerate with the same numbers as the submitted ones but a lighter label weight, because the submitted pair was built with a bolder font configuration. Values, ratios and thresholds are identical.
+
+## Citation
+
+```bibtex
+@InProceedings{VohSid_AbsentByte_MICCAISAT2026,
+  author    = {Vohra, Siddharth and Ravikiran, Manikandan},
+  title     = {{Absent-Byte Diagnoses: Auditing Structured Medical VLM Interfaces}},
+  booktitle = {Medical Image Computing and Computer Assisted Intervention --
+               MICCAI 2026 Workshops and Challenges},
+  year      = {2026},
+  publisher = {Springer Nature Switzerland},
+  volume    = {LNCS 17263},
+  url       = {https://papers.miccai.org/miccai-2026-sat/MedAgent_050.html}
+}
+
+@misc{vohra2026hearsay,
+  title         = {Hearsay: Vision-Language Medical Diagnoses Without an Image},
+  author        = {Vohra, Siddharth},
+  year          = {2026},
+  eprint        = {2607.26886},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CV},
+  note          = {Presented at the 1st Workshop on Toward Trustworthy
+                   Vision-Language Models in the Wild (TrustVLM), ACM ICMR 2026,
+                   Amsterdam. Non-archival},
+  url           = {https://arxiv.org/abs/2607.26886}
+}
+```
 
 ## Licence
 
